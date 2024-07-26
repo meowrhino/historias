@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las historias de Manu</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #fff0d9;
+            background-image: linear-gradient(135deg, #eeb470 25%, transparent 25%), 
+                              linear-gradient(225deg, #eeb470 25%, transparent 25%), 
+                              linear-gradient(45deg, #eeb470 25%, transparent 25%), 
+                              linear-gradient(315deg, #eeb470 25%, #fff0d9 25%);
+            background-position: 17px 0, 17px 0, 0 0, 0 0;
+            background-size: 30px 30px;
+            background-repeat: repeat;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: #333;
+            margin: 0px;
+        }
+
+        /* Marquee */
+        h1 {
+            text-align: center;
+        }
+
+        h1 span {
+            display: inline-block;
+            padding: 15px 30px; /* Aumentar tamaño del span */
+            background-color: #383838;
+            border: 3px dashed #fff0d8; /* Mejorar el borde del span */
+            border-radius: 10px;
+            color: #fff0d8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: marquee 20s linear infinite;
+            position: relative;
+            font-size: 1.5em; /* Aumentar tamaño de la fuente */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Estilos para los artículos */
+        article {
+            padding: 15px 35px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Más sombra para los artículos */
+            max-width: 70%;
+            margin: 30px auto;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .propias {
+            color: #7b4a12; /* Marrón inspirado en índigo */
+            background-color: #fcf9f6; /* Fondo blanco ligeramente distinto */
+            font-family: 'Tahoma', Arial, sans-serif;
+        }
+
+        .suenos {
+            color: #5a3d1e; /* Marrón oscuro */
+            background-color: #fdf8f4; /* Fondo blanco ligeramente distinto */
+            font-family: 'Gill Sans', Arial, sans-serif;
+        }
+
+        .IA {
+            color: #3e2d1c; /* Marrón oscuro */
+            background-color: #fdf7f5; /* Fondo blanco ligeramente distinto */
+            font-family: 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .data {
+            margin-right: -20px;
+            padding: 3px 8px;
+            margin-top: 50px;
+            border-radius: 2px;
+            text-align: right;
+            display: inline-block;
+            font-family: cursive;
+        }
+
+        .data-container {
+            text-align: right;
+        }
+
+        /* Estilos para los links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Estilos para el reproductor de audio */
+        audio {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #333;
+            color: #fff;
+            border-radius: 0;
+        }
+
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-pause-button,
+        audio::-webkit-media-controls-mute-button,
+        audio::-webkit-media-controls-volume-slider {
+            filter: invert(100%);
+        }
+
+        audio::-webkit-media-controls-timeline {
+            background-color: transparent;
+        }
+
+        audio::-webkit-media-controls-current-time-display,
+        audio::-webkit-media-controls-time-remaining-display {
+            color: #fff;
+        }
+
+        audio::-webkit-media-controls-enclosure {
+            border-radius: 3px;
+        }
+
+        /* Estilos para el reproductor de video de YouTube */
+        iframe {
+            width: 100%;
+            height: 315px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><span>Las historias de Manu</span></h1>
+
+    <article class="propias">
+        <h3>Propias</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="data-container">
+            <div class="data">20 de julio de 2024</div>
+        </div>
+    </article>
+
+    <article class="suenos">
+        <h3>Sueños</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Sed euismod sapien ac turpis tristique, et fermentum lectus vulputate.</p>
+        <p>Integer at volutpat ligula. Fusce ac nisi eu nisi pharetra elementum. Suspendisse potenti. Phasellus sodales, leo in tristique pharetra, nunc quam lacinia massa, eget scelerisque lacus libero ut lorem.</p>
+        <div class="data-container">
+            <div class="data">21 de julio de 2024</div>
+        </div>
+    </article>
+
+    <article class="IA">
+        <h3>IA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor arcu quis diam faucibus, ac accumsan odio pretium. Maecenas malesuada eros nec ligula tincidunt, a posuere urna placerat. Sed pretium nibh a justo luctus, in luctus eros fringilla.</p>
+        <p>Morbi bibendum, nunc eget feugiat viverra, nisi arcu tempus arcu, nec tempor felis odio et arcu. Integer ac diam id lacus hendrerit euismod. Nulla facilisi. Mauris nec sapien tincidunt, fermentum sapien eget, scelerisque turpis.</p>
+        <div class="data-container">
+            <div class="data">22 de julio de 2024</div>
+        </div>
+    </article>
+
+    <script>
+        document.querySelectorAll('article').forEach(article => {
+            const dataDiv = article.querySelector('.data');
+            const articleClass = article.classList[0];
+            const colorMapping = {
+                propias: '#7b4a12',
+                suenos: '#5a3d1e',
+                IA: '#3e2d1c'
+            };
+            const backgroundColor = colorMapping[articleClass];
+            if (backgroundColor) {
+                dataDiv.style.backgroundColor = backgroundColor;
+                dataDiv.style.color = '#f0e6d6'; // Color de texto predeterminado
+                dataDiv.style.boxShadow = `0 1px 2px ${backgroundColor.replace('0.7', '0.5')}`; // Ajuste del color de la sombra
+            }
+        });
+    </script>
+
+</body>
+
+</html>
